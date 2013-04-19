@@ -1,0 +1,893 @@
+
+
+DROP TABLE IF EXISTS `comuna`;
+
+CREATE TABLE `comuna` (
+
+  `co_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+
+  `co_pr` int(10) unsigned NOT NULL,
+
+  `co_descripcion` varchar(60) NOT NULL,
+
+  PRIMARY KEY (`co_id`)
+
+) ENGINE=InnoDB AUTO_INCREMENT=352 DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `comuna` (`co_id`,`co_pr`,`co_descripcion`) VALUES 
+
+ (1,1,'ARICA'),
+
+ (2,1,'CAMARONES'),
+
+ (3,2,'PUTRE'),
+
+ (4,2,'GENERAL LAGOS'),
+
+ (5,3,'IQUIQUE'),
+
+ (6,3,'ALTO HOSPICIO'),
+
+ (7,3,'HUARA'),
+
+ (8,3,'CAMIÑA'),
+
+ (9,3,'COLCHANE'),
+
+ (10,3,'PICA'),
+
+ (11,3,'POZO ALMONTE'),
+
+ (12,4,'TOCOPILLA'),
+
+ (13,4,'MARÍA ELENA'),
+
+ (14,5,'CALAMA'),
+
+ (15,5,'OLLAGUE'),
+
+ (16,5,'SAN PEDRO DE ATACAMA'),
+
+ (17,6,'ANTOFAGASTA'),
+
+ (18,6,'MEJILLONES'),
+
+ (19,6,'SIERRA GORDA'),
+
+ (20,6,'TALTAL'),
+
+ (21,7,'CHAÑARAL'),
+
+ (22,7,'DIEGO DE ALMAGRO'),
+
+ (23,8,'COPIAPÓ'),
+
+ (24,8,'CALDERA'),
+
+ (25,8,'TIERRA AMARILLA'),
+
+ (26,9,'VALLENAR'),
+
+ (27,9,'FREIRINA'),
+
+ (28,9,'HUASCO'),
+
+ (29,9,'ALTO DEL CARMEN'),
+
+ (30,10,'LA SERENA'),
+
+ (31,10,'LA HIGUERA'),
+
+ (32,10,'COQUIMBO'),
+
+ (33,10,'ANDACOLLO'),
+
+ (34,10,'VICUÑA'),
+
+ (35,10,'PAIHUANO'),
+
+ (36,11,'OVALLE'),
+
+ (37,11,'RÍO HURTADO'),
+
+ (38,11,'MONTE PATRIA'),
+
+ (39,11,'COMBARBALÁ'),
+
+ (40,11,'PUNITAQUI'),
+
+ (41,12,'ILLAPEL'),
+
+ (42,12,'SALAMANCA'),
+
+ (43,12,'LOS VILOS'),
+
+ (44,12,'CANELA'),
+
+ (45,13,'VALPARAÍSO'),
+
+ (46,13,'CASABLANCA'),
+
+ (47,13,'CONCON'),
+
+ (48,13,'JUAN FERNÁNDEZ'),
+
+ (49,13,'PUCHUNCAVÍ'),
+
+ (50,13,'QUILPUÉ'),
+
+ (51,13,'QUINTERO'),
+
+ (52,13,'VILLA ALEMANA'),
+
+ (53,13,'VIÑA DEL MAR'),
+
+ (54,14,'PETORCA'),
+
+ (55,14,'LA LIGUA'),
+
+ (56,14,'CABILDO'),
+
+ (57,14,'PAPUDO'),
+
+ (58,14,'ZAPALLAR'),
+
+ (59,15,'LOS ANDES'),
+
+ (60,15,'SAN ESTEBAN'),
+
+ (61,15,'CALLE LARGA'),
+
+ (62,15,'RINCONADA'),
+
+ (63,16,'SAN FELIPE'),
+
+ (64,16,'CATEMU'),
+
+ (65,16,'LLAY LLAY'),
+
+ (66,16,'PANQUEHUE'),
+
+ (67,16,'PUTAENDO'),
+
+ (68,16,'SANTA MARÍA'),
+
+ (69,17,'QUILLOTA'),
+
+ (70,17,'CALERA'),
+
+ (71,17,'HIJUELAS'),
+
+ (72,17,'LIMACHE'),
+
+ (73,17,'LA CRUZ'),
+
+ (74,17,'NOGALES'),
+
+ (75,17,'OLMUÉ'),
+
+ (76,18,'SAN ANTONIO'),
+
+ (77,18,'ALGARROBO'),
+
+ (78,18,'CARTAGENA'),
+
+ (79,18,'EL QUISCO'),
+
+ (80,18,'EL TABO'),
+
+ (81,18,'SANTO DOMINGO'),
+
+ (82,19,'ISLA DE PASCUA'),
+
+ (83,20,'RANCAHUA'),
+
+ (84,20,'CODEGUA'),
+
+ (85,20,'COINCO'),
+
+ (86,20,'COLTAUCO'),
+
+ (87,20,'DOÑIHUE'),
+
+ (88,20,'GRANEROS'),
+
+ (89,20,'LAS CABRAS'),
+
+ (90,20,'MOSTAZAL'),
+
+ (91,20,'MACHALÍ'),
+
+ (92,20,'MALLOA'),
+
+ (93,20,'OLIVAR'),
+
+ (94,20,'PEUMO'),
+
+ (95,20,'PICHIDEGUA'),
+
+ (96,20,'QUINTA DE TILCOCO'),
+
+ (97,20,'RENGO'),
+
+ (98,20,'REQUINOA'),
+
+ (99,20,'SAN VICENTE'),
+
+ (100,21,'SAN FERNANDO'),
+
+ (101,21,'CHÉPICA'),
+
+ (102,21,'CHIMBARONGO'),
+
+ (103,21,'LOLOL'),
+
+ (104,21,'NANCAHUA'),
+
+ (105,21,'PALMILLA'),
+
+ (106,21,'PERALILLO'),
+
+ (107,21,'PLACILLA'),
+
+ (108,21,'PUMANQUE'),
+
+ (109,21,'SANTA CRUZ'),
+
+ (110,22,'PICHILEMU'),
+
+ (111,22,'LA ESTRELLA'),
+
+ (112,22,'LITUECHE'),
+
+ (113,22,'MARCHIGUE'),
+
+ (114,22,'NAVIDAD'),
+
+ (115,22,'PAREDONES'),
+
+ (116,23,'CURICÓ'),
+
+ (117,23,'TENO'),
+
+ (118,23,'ROMERAL'),
+
+ (119,23,'MOLINA'),
+
+ (120,23,'SAGRADA FAMILIA'),
+
+ (121,23,'HUALAÑÉ'),
+
+ (122,23,'LICANTÉN'),
+
+ (123,23,'VICHUQUÉN'),
+
+ (124,23,'RAUCO'),
+
+ (125,24,'TALCA'),
+
+ (126,24,'PELARCO'),
+
+ (127,24,'RÍO CLARO'),
+
+ (128,24,'SAN CLEMENTE'),
+
+ (129,24,'MAULE'),
+
+ (130,24,'SAN RAFAEL'),
+
+ (131,24,'EMPEDRADO'),
+
+ (132,24,'PENCAHUE'),
+
+ (133,24,'CONSTITUCIÓN'),
+
+ (134,24,'CUREPTO'),
+
+ (135,25,'LINARES'),
+
+ (136,25,'YERBAS BUENAS'),
+
+ (137,25,'COLBÚN'),
+
+ (138,25,'LONGAVÍ'),
+
+ (139,25,'PARRAL'),
+
+ (140,25,'RETIRO'),
+
+ (141,25,'VILLA ALEGRE'),
+
+ (142,25,'SAN JAVIER'),
+
+ (143,26,'CAUQUENES'),
+
+ (144,26,'PELUHUE'),
+
+ (145,26,'CHANCO'),
+
+ (146,27,'CHILLÁN'),
+
+ (147,27,'BULNES'),
+
+ (148,27,'CHILLAN VIEJO'),
+
+ (149,27,'COBQUECURA'),
+
+ (150,27,'COELEMU'),
+
+ (151,27,'COIHUECO'),
+
+ (152,27,'EL CARMEN'),
+
+ (153,27,'NINHUE'),
+
+ (154,27,'ÑIQUÉN'),
+
+ (155,27,'PEMUCO'),
+
+ (156,27,'PINTO'),
+
+ (157,27,'PORTEZUELO'),
+
+ (158,27,'QUILLÓN'),
+
+ (159,27,'QUIRIHUE'),
+
+ (160,27,'RANQUIL'),
+
+ (161,27,'SAN CARLOS'),
+
+ (162,27,'SAN FABIÁN'),
+
+ (163,27,'SAN IGNACIO'),
+
+ (164,27,'SAN NICOLÁS'),
+
+ (165,27,'TREHUACO'),
+
+ (166,27,'YUNGAY'),
+
+ (167,28,'LOS ANGELES'),
+
+ (168,28,'ALTO BIO BIO'),
+
+ (169,28,'ANTUCO'),
+
+ (170,28,'CABRERO'),
+
+ (171,28,'LAJA'),
+
+ (172,28,'MULCHÉN'),
+
+ (173,28,'NACIMIENTO'),
+
+ (174,28,'NEGRETE'),
+
+ (175,28,'QUILACO'),
+
+ (176,28,'QUILLECO'),
+
+ (177,28,'SANTA BÁRBARA'),
+
+ (178,28,'SAN ROSENDO'),
+
+ (179,28,'TUCAPEL'),
+
+ (180,28,'YUMBEL'),
+
+ (181,29,'CONCEPCIÓN'),
+
+ (182,29,'CHIGUAYANTE'),
+
+ (183,29,'CORONEL'),
+
+ (184,29,'FLORIDA'),
+
+ (185,29,'HUALPÉN'),
+
+ (186,29,'HUALQUI'),
+
+ (187,29,'LOTA'),
+
+ (188,29,'PENCO'),
+
+ (189,29,'SAN PEDRO DE LA PAZ'),
+
+ (190,29,'SANTA JUANA'),
+
+ (191,29,'TALCAHUANO'),
+
+ (192,29,'TOMÉ'),
+
+ (193,30,'ARAUCO'),
+
+ (194,30,'CAÑETE'),
+
+ (195,30,'CONTULMO'),
+
+ (196,30,'CURANILAHUE'),
+
+ (197,30,'LEBU'),
+
+ (198,30,'LOS ALAMOS'),
+
+ (199,30,'TIRUA'),
+
+ (200,31,'ANGOL'),
+
+ (201,31,'COLLIPULLI'),
+
+ (202,31,'CURACAUTÍN'),
+
+ (203,31,'ERCILLA'),
+
+ (204,31,'LONQUIMAY'),
+
+ (205,31,'LOS SAUCES'),
+
+ (206,31,'LUMACO'),
+
+ (207,31,'PURÉN'),
+
+ (208,31,'REINACO'),
+
+ (209,31,'TRAIGUÉN'),
+
+ (210,31,'VICTORIA'),
+
+ (211,32,'TEMUCO'),
+
+ (212,32,'CARAHUE'),
+
+ (213,32,'CHOLCHOL'),
+
+ (214,32,'CUNCO'),
+
+ (215,32,'CURARREHUE'),
+
+ (216,32,'FREIRE'),
+
+ (217,32,'GALVARINO'),
+
+ (218,32,'GORBEA'),
+
+ (219,32,'LAUTARO'),
+
+ (220,32,'LONCOCHE'),
+
+ (221,32,'MELIPEUCO'),
+
+ (222,32,'NUEVA IMPERIAL'),
+
+ (223,32,'PADRE LAS CASAS'),
+
+ (224,32,'PERQUENCO'),
+
+ (225,32,'PITRUFQUÉN'),
+
+ (226,32,'PUCÓN'),
+
+ (227,32,'SAAVEDRA'),
+
+ (228,32,'TEODORO SCHMIDT'),
+
+ (229,32,'TOLTÉN'),
+
+ (230,32,'VILCÚN'),
+
+ (231,32,'VILLARICA'),
+
+ (232,33,'OSORNO'),
+
+ (233,33,'PUERTO OCTAY'),
+
+ (234,33,'PURRANQUE'),
+
+ (235,33,'PUYEHUE'),
+
+ (236,33,'RÍO NEGRO'),
+
+ (237,33,'SAN JUAN DE LA COSTA'),
+
+ (238,33,'SAN PABLO'),
+
+ (239,34,'CALBUCO'),
+
+ (240,34,'COCHAMÓ'),
+
+ (241,34,'FRESIA'),
+
+ (242,34,'FRUTILLAR'),
+
+ (243,34,'LOS MUERMOS'),
+
+ (244,34,'LLANQUIHUE'),
+
+ (245,34,'MAULLÍN'),
+
+ (246,34,'PUERTO MONTT'),
+
+ (247,34,'PUERTO VARAS'),
+
+ (248,35,'CHILOÉ'),
+
+ (249,35,'ANCUD'),
+
+ (250,35,'CASTRO'),
+
+ (251,35,'CURACO DE VÉLEZ'),
+
+ (252,35,'CHONCHI'),
+
+ (253,35,'DALCAHUE'),
+
+ (254,35,'PUQUELDÓN'),
+
+ (255,35,'QUEILÉN'),
+
+ (256,35,'QUELLÓN'),
+
+ (257,35,'QUEMCHI'),
+
+ (258,35,'QUINCHAO'),
+
+ (259,36,'CHAITÉN'),
+
+ (260,36,'FUTALEUFÚ'),
+
+ (261,36,'HUALAIHUÉ'),
+
+ (262,36,'PALENA'),
+
+ (263,37,'COCHRANE'),
+
+ (264,37,'O\' HIGGINS'),
+
+ (265,37,'TORTEL'),
+
+ (266,38,'AYSÉN'),
+
+ (267,38,'CISNES'),
+
+ (268,38,'GUAITECAS'),
+
+ (269,39,'COIHAIQUE'),
+
+ (270,39,'LAGO VERDE'),
+
+ (271,40,'CHILE CHICO'),
+
+ (272,40,'RÍO IBAÑEZ'),
+
+ (273,41,'NATALES'),
+
+ (274,41,'TORRES DEL PAINE'),
+
+ (275,42,'PUNTA ARENAS'),
+
+ (276,42,'RÍO VERDE'),
+
+ (277,42,'LAGUNA BLANCA'),
+
+ (278,42,'SAN GREGORIO'),
+
+ (279,43,'PORVENIR'),
+
+ (280,43,'PRIMAVERA'),
+
+ (281,43,'TIMAUKEL'),
+
+ (282,44,'NAVARINO'),
+
+ (283,44,'ANTÁRTICA'),
+
+ (284,45,'CERRILLOS'),
+
+ (285,45,'CERRO NAVIA'),
+
+ (286,45,'CONCHALÍ'),
+
+ (287,45,'EL BOSQUE'),
+
+ (288,45,'ESTACIÓN CENTRAL'),
+
+ (289,45,'HUECHURABA'),
+
+ (290,45,'INDEPENDENCIA'),
+
+ (291,45,'LA CISTERNA'),
+
+ (292,45,'LA FLORIDA'),
+
+ (293,45,'LA GRANJA'),
+
+ (294,45,'LA PINTANA'),
+
+ (295,45,'LA REINA'),
+
+ (296,45,'LAS CONDES'),
+
+ (297,45,'LO BARNECHEA'),
+
+ (298,45,'LO ESPEJO'),
+
+ (299,45,'LO PRADO'),
+
+ (300,45,'MACÚL'),
+
+ (301,45,'MAIPÚ'),
+
+ (302,45,'ÑUÑOA'),
+
+ (303,45,'PEDRO AGUIRRE CERDA'),
+
+ (304,45,'PEÑALOLÉN'),
+
+ (305,45,'PROVIDENCIA'),
+
+ (306,45,'PUDAHUEL'),
+
+ (307,45,'QUILICURA'),
+
+ (308,45,'QUINTA NORMAL'),
+
+ (309,45,'RECOLETA'),
+
+ (310,45,'RENCA'),
+
+ (311,45,'SAN JOAQUÍN'),
+
+ (312,45,'SAN MIGUEL'),
+
+ (313,45,'SAN RAMÓN'),
+
+ (314,45,'SANTIAGO'),
+
+ (315,45,'VITACURA'),
+
+ (316,46,'PUENTE ALTO'),
+
+ (317,46,'PIRQUE'),
+
+ (318,46,'SAN JOSÉ DE MAIPO'),
+
+ (319,47,'MELIPILLA'),
+
+ (320,47,'MARÍA PINTO'),
+
+ (321,47,'CURACAVÍ'),
+
+ (322,47,'ALHUÉ'),
+
+ (323,47,'SAN PEDRO'),
+
+ (324,48,'TALAGANTE'),
+
+ (325,48,'EL MONTE'),
+
+ (326,48,'ISLA DE MAIPO'),
+
+ (327,48,'PADRE HURTADO'),
+
+ (328,48,'PEÑAFLOR'),
+
+ (329,49,'BUIN'),
+
+ (330,49,'CALERA DE TANGO'),
+
+ (331,49,'PAINE'),
+
+ (332,49,'SAN BERNARDO'),
+
+ (333,50,'COLINA'),
+
+ (334,50,'LAMPA'),
+
+ (335,50,'TIL TIL'),
+
+ (336,51,'VALDIVIA'),
+
+ (337,51,'CORRAL'),
+
+ (338,51,'LANCO'),
+
+ (339,51,'LOS LAGOS'),
+
+ (340,51,'MAFIL'),
+
+ (341,51,'MARIQUINA'),
+
+ (342,51,'PAILLACO'),
+
+ (343,51,'PANGUIPULLI'),
+
+ (344,52,'LA UNION'),
+
+ (345,52,'FUTRONO'),
+
+ (346,52,'LAGO RANCO'),
+
+ (347,52,'RÍO BUENO');
+
+
+
+DROP TABLE IF EXISTS `provincia`;
+
+CREATE TABLE `provincia` (
+
+  `pr_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+
+  `pr_region` int(10) unsigned NOT NULL,
+
+  `pr_nombre` varchar(60) NOT NULL,
+
+  PRIMARY KEY (`pr_id`)
+
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+
+
+
+
+
+INSERT INTO `provincia` (`pr_id`,`pr_region`,`pr_nombre`) VALUES 
+
+ (1,15,'ARICA'),
+
+ (2,15,'PARINACOTA'),
+
+ (3,1,'IQUIQUE'),
+
+ (4,2,'TOCOPILLA'),
+
+ (5,2,'EL LOA'),
+
+ (6,2,'ANTOFAGASTA'),
+
+ (7,3,'CHAÑARAL'),
+
+ (8,3,'COPIAPÓ'),
+
+ (9,3,'HUASCO'),
+
+ (10,4,'ELQUI'),
+
+ (11,4,'LIMARÍ'),
+
+ (12,4,'CHOAPA'),
+
+ (13,5,'VALPARAÍSO'),
+
+ (14,5,'PETORCA'),
+
+ (15,5,'LOS ANDES'),
+
+ (16,5,'SAN FELIPE DE ACONCAGUA'),
+
+ (17,5,'QUILLOTA'),
+
+ (18,5,'SAN ANTONIO'),
+
+ (19,5,'ISLA DE PASCUA'),
+
+ (20,6,'CACHAPOAL'),
+
+ (21,6,'COLCHAHUA'),
+
+ (22,6,'CARDENAL CARO'),
+
+ (23,7,'CURICÓ'),
+
+ (24,7,'TALCA'),
+
+ (25,7,'LINARES'),
+
+ (26,7,'CAUQUENES'),
+
+ (27,8,'ÑUBLE'),
+
+ (28,8,'BIO BIO'),
+
+ (29,8,'CONCEPCIÓN'),
+
+ (30,8,'ARAUCO'),
+
+ (31,9,'MALLECO'),
+
+ (32,9,'CAUTÍN'),
+
+ (33,10,'OSORNO'),
+
+ (34,10,'LLANQUIHUE'),
+
+ (35,10,'CHILOÉ'),
+
+ (36,10,'PALENA'),
+
+ (37,11,'CAPITÁN PRATT'),
+
+ (38,11,'AYSÉN'),
+
+ (39,11,'COIHAIQUE'),
+
+ (40,11,'GENERAL CARRERA'),
+
+ (41,12,'ÚLTIMA ESPERANZA'),
+
+ (42,12,'MAGALLANES'),
+
+ (43,12,'TIERRA DEL FUEGO'),
+
+ (44,12,'ANTÁRTICA CHILENA'),
+
+ (45,13,'SANTIAGO'),
+
+ (46,13,'CORDILLERA'),
+
+ (47,13,'MELIPILLA'),
+
+ (48,13,'TALAGANTE'),
+
+ (49,13,'MAIPO'),
+
+ (50,13,'CHACABUCO'),
+
+ (51,14,'VALDIVIA'),
+
+ (52,14,'RANCO');
+
+
+
+
+
+DROP TABLE IF EXISTS `region`;
+
+CREATE TABLE `region` (
+
+  `re_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+
+  `re_nombre` varchar(45) NOT NULL,
+
+  `re_rom` varchar(5) NOT NULL,
+
+  `re_titulo` varchar(55) NOT NULL,
+
+  PRIMARY KEY (`re_id`)
+
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `region` (`re_id`,`re_nombre`,`re_rom`,`re_titulo`) VALUES 
+
+ (1,'PRIMERA','I','REGIÓN DE TARAPACÁ'),
+
+ (2,'SEGUNDA','II','REGIÓN DE ANTOFAGASTA'),
+
+ (3,'TERCERA','III','REGIÓN DE ATACAMA'),
+
+ (4,'CUARTA','IV','REGIÓN DE COQUIMBO'),
+
+ (5,'QUINTA','V','REGIÓN DE VALPARAISO'),
+
+ (6,'SEXTA','VI','REGIÓN DEL LIBERTADOR GENERAL BERNARDO O\'HIGGINS'),
+
+ (7,'SÉPTIMA','VII','REGIÓN DEL MAULE'),
+
+ (8,'OCTAVA','VIII','REGIÓN DEL BÍO - BÍO'),
+
+ (9,'NOVENA','IX','REGIÓN DE LA ARAUCANÍA'),
+
+ (10,'DÉCIMA','X','REGIÓN DE LOS LAGOS'),
+
+ (11,'DECIMOPRIMERA','XI','REGIÓN AYSÉN DEL GENERAL CARLOS IBÁÑEZ DEL CAMPO'),
+
+ (12,'DECIMOSEGUNDA','XII','REGIÓN DE MAGALLANES Y LA ANTÁRTICA CHILENA '),
+
+ (13,'METROPOLITANA','XIII','REGIÓN METROPOLITANA'),
+
+ (14,'DECIMOCUARTA','XIV','REGION DE LOS RÍOS'),
+
+ (15,'DECIMOQUINTA','XV','REGIÓN DE ARICA Y PARINACOTA');
